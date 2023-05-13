@@ -1,0 +1,12 @@
+import "monomer.lt"   # <-- defines "Monomer" and "ForceField"
+
+Polymer inherits ForceField {
+
+  # The next line is optional
+  create_var {$mol}  # force all monomers to share the same molecule-ID
+
+
+  mon1 = new Monomer
+
+
+}

@@ -1,0 +1,114 @@
+import "forcefield.lt"   # contains force-field parameters
+
+Monomer inherits ForceField {
+
+  write("Data Atoms") {
+    # atomId molId   atomType   charge   x      y        z      
+    $atom:ca1 $mol:... @atom:CA   0.0   0.000  4.4000   0.0000000
+    $atom:r1  $mol:... @atom:R6   -0.920   0.000  7.8000   0.0000000
+    $atom:ca2 $mol:... @atom:CA   0.0   3.200  4.4000   0.0000000
+    $atom:r2  $mol:... @atom:R3   -0.650   3.200  1.0000   0.0000000
+    $atom:ca3 $mol:... @atom:CA   0.0   6.400  4.4000   0.0000000
+    $atom:r3  $mol:... @atom:R5   0.920   6.400  7.8000   0.0000000
+    $atom:ca4 $mol:... @atom:CA   0.0   9.600  4.4000   0.0000000
+    $atom:r4  $mol:... @atom:R4   0.0   9.600  1.0000   0.0000000
+    $atom:ca5 $mol:... @atom:CA   0.0   12.80  4.4000   0.0000000
+    $atom:r5  $mol:... @atom:R5   0.920   12.80  7.8000   0.0000000
+    $atom:ca6 $mol:... @atom:CA   0.0   16.00  4.4000   0.0000000
+    $atom:r6  $mol:... @atom:R5   0.920   16.00  1.0000   0.0000000
+    $atom:ca7 $mol:... @atom:CA   0.0   19.20  4.4000   0.0000000
+    $atom:r7  $mol:... @atom:R5   0.920   19.20  7.8000   0.0000000
+    $atom:ca8 $mol:... @atom:CA   0.0   22.40  4.4000   0.0000000
+    $atom:r8  $mol:... @atom:R5   0.920   22.40  1.0000   0.0000000
+    $atom:ca9 $mol:... @atom:CA   0.0   25.60  4.4000   0.0000000
+    $atom:r9  $mol:... @atom:R4   0.0   25.60  7.8000   0.0000000
+    $atom:ca10 $mol:... @atom:CA   0.0   28.80  4.4000   0.0000000
+    $atom:r10  $mol:... @atom:R1   0.0   28.80  1.0000   0.0000000
+    $atom:ca11 $mol:... @atom:CA   0.0   32.00  4.4000   0.0000000
+    $atom:r11  $mol:... @atom:R5   0.920   32.00  7.8000   0.0000000
+    $atom:ca12 $mol:... @atom:CA   0.0   35.20  4.4000   0.0000000
+    $atom:r12  $mol:... @atom:R5   0.920   35.20  1.0000   0.0000000
+    $atom:ca13 $mol:... @atom:CA   0.0   38.40  4.4000   0.0000000
+    $atom:r13  $mol:... @atom:R5   0.920   38.40  7.8000   0.0000000
+    $atom:ca14 $mol:... @atom:CA   0.0   41.60  4.4000   0.0000000
+    $atom:r14  $mol:... @atom:R1   0.0   41.60  1.0000   0.0000000
+    $atom:ca15 $mol:... @atom:CA   0.0   44.80  4.4000   0.0000000
+    $atom:r15  $mol:... @atom:R5   0.920   44.80  7.8000   0.0000000
+    $atom:ca16 $mol:... @atom:CA   0.0   48.00  4.4000   0.0000000
+    $atom:r16  $mol:... @atom:R6   -0.920   48.00  1.0000   0.0000000
+    $atom:ca17 $mol:... @atom:CA   0.0   51.20  4.4000   0.0000000
+    $atom:r17  $mol:... @atom:R5   0.920   51.20  7.8000   0.0000000
+    $atom:ca18 $mol:... @atom:CA   0.0   54.40  4.4000   0.0000000
+    $atom:r18  $mol:... @atom:R5   0.920   54.40  1.0000   0.0000000
+    $atom:ca19 $mol:... @atom:CA   0.0   57.60  4.4000   0.0000000
+    $atom:r19  $mol:... @atom:R5   0.920   57.60  7.8000   0.0000000
+    $atom:ca20 $mol:... @atom:CA   0.0   60.80  4.4000   0.0000000
+    $atom:r20  $mol:... @atom:R3   -0.650   60.80  1.0000   0.0000000
+    $atom:ca21 $mol:... @atom:CA   0.0   64.00  4.4000   0.0000000
+    $atom:r21  $mol:... @atom:R5   0.920   64.00  7.8000   0.0000000
+    $atom:ca22 $mol:... @atom:CA   0.0   67.20  4.4000   0.0000000
+    $atom:r22  $mol:... @atom:R5   0.920   67.20  1.0000   0.0000000
+    $atom:ca23 $mol:... @atom:CA   0.0   70.40  4.4000   0.0000000
+    $atom:r23  $mol:... @atom:R4   0.0   70.40  7.8000   0.0000000
+    $atom:ca24 $mol:... @atom:CA   0.0   73.60  4.4000   0.0000000
+    $atom:r24  $mol:... @atom:R1   0.0   73.60  1.0000   0.0000000
+  }
+
+
+  write("Data Bonds") {
+    # bond-id   bond-type        atom-id1  atom-id2
+    $bond:cr1    @bond:Sidechain  $atom:ca1  $atom:r1
+    $bond:cr2    @bond:Sidechain  $atom:ca2  $atom:r2
+    $bond:cr3    @bond:Sidechain  $atom:ca3  $atom:r3
+    $bond:cr4    @bond:Sidechain  $atom:ca4  $atom:r4
+    $bond:cr5    @bond:Sidechain  $atom:ca5  $atom:r5
+    $bond:cr6    @bond:Sidechain  $atom:ca6  $atom:r6
+    $bond:cr7    @bond:Sidechain  $atom:ca7  $atom:r7
+    $bond:cr8    @bond:Sidechain  $atom:ca8  $atom:r8
+    $bond:cr9    @bond:Sidechain  $atom:ca9  $atom:r9
+    $bond:cr10    @bond:Sidechain  $atom:ca10  $atom:r10
+    $bond:cr11    @bond:Sidechain  $atom:ca11  $atom:r11
+    $bond:cr12    @bond:Sidechain  $atom:ca12  $atom:r12
+    $bond:cr13    @bond:Sidechain  $atom:ca13  $atom:r13
+    $bond:cr14    @bond:Sidechain  $atom:ca14  $atom:r14
+    $bond:cr15    @bond:Sidechain  $atom:ca15  $atom:r15
+    $bond:cr16    @bond:Sidechain  $atom:ca16  $atom:r16
+    $bond:cr17    @bond:Sidechain  $atom:ca17  $atom:r17
+    $bond:cr18    @bond:Sidechain  $atom:ca18  $atom:r18
+    $bond:cr19    @bond:Sidechain  $atom:ca19  $atom:r19
+    $bond:cr20    @bond:Sidechain  $atom:ca20  $atom:r20
+    $bond:cr21    @bond:Sidechain  $atom:ca21  $atom:r21
+    $bond:cr22    @bond:Sidechain  $atom:ca22  $atom:r22
+    $bond:cr23    @bond:Sidechain  $atom:ca23  $atom:r23
+    $bond:cr24    @bond:Sidechain  $atom:ca24  $atom:r24
+    $bond:backbone1  @bond:Backbone  $atom:ca1  $atom:ca2
+    $bond:backbone2  @bond:Backbone  $atom:ca2  $atom:ca3
+    $bond:backbone3  @bond:Backbone  $atom:ca3  $atom:ca4
+    $bond:backbone4  @bond:Backbone  $atom:ca4  $atom:ca5
+    $bond:backbone5  @bond:Backbone  $atom:ca5  $atom:ca6
+    $bond:backbone6  @bond:Backbone  $atom:ca6  $atom:ca7
+    $bond:backbone7  @bond:Backbone  $atom:ca7  $atom:ca8
+    $bond:backbone8  @bond:Backbone  $atom:ca8  $atom:ca9
+    $bond:backbone9  @bond:Backbone  $atom:ca9  $atom:ca10
+    $bond:backbone10  @bond:Backbone  $atom:ca10  $atom:ca11
+    $bond:backbone11  @bond:Backbone  $atom:ca11  $atom:ca12
+    $bond:backbone12  @bond:Backbone  $atom:ca12  $atom:ca13
+    $bond:backbone13  @bond:Backbone  $atom:ca13  $atom:ca14
+    $bond:backbone14  @bond:Backbone  $atom:ca14  $atom:ca15
+    $bond:backbone15  @bond:Backbone  $atom:ca15  $atom:ca16
+    $bond:backbone16  @bond:Backbone  $atom:ca16  $atom:ca17
+    $bond:backbone17  @bond:Backbone  $atom:ca17  $atom:ca18
+    $bond:backbone18  @bond:Backbone  $atom:ca18  $atom:ca19
+    $bond:backbone19  @bond:Backbone  $atom:ca19  $atom:ca20
+    $bond:backbone20  @bond:Backbone  $atom:ca20  $atom:ca21
+    $bond:backbone21  @bond:Backbone  $atom:ca21  $atom:ca22
+    $bond:backbone22  @bond:Backbone  $atom:ca22  $atom:ca23
+    $bond:backbone23  @bond:Backbone  $atom:ca23  $atom:ca24
+  }
+}
+
+
+
+# NOTE: The "..." in "$mol:..." tells moltemplate that this molecule is part
+#       of a larger molecule, and to use the larger parent object's 
+#       molecule id number as it's own.
